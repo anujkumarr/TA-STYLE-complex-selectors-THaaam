@@ -187,13 +187,30 @@ h1{
   color: rgb(143,156,186);
   font-weight: 700;
 }
-.file img{
-   vertical-align: middle;
-   margin-right: 0.5rem;
-}
 
 .seprate hr{
   margin: 4rem 0rem;
+}
+
+[href="#.pdf"]::before{
+  content: url(../pdf.png);
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+[href="#.doc"]::before{
+  content: url(../word.png);
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+[href="#.jpg"]::before{
+  content: url(../image.png);
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+[href="#.mp4"]::before{
+  content: url(../video.png);
+  vertical-align: middle;
+  margin-right: 0.5rem;
 }
 
 /* graph section */
@@ -250,7 +267,6 @@ table{
   width: 100%;
 }
 th{
-  /* border: 1px solid grey; */
   padding: 0.75rem;
 }
 td{
@@ -376,7 +392,6 @@ tr:nth-child(even){
   padding: 5rem;
   border-radius: 2rem;
   margin: 10rem auto;
-   /* margin: 10rem 0rem; */
 }
 .free-trial{
   text-align: center;
@@ -461,7 +476,7 @@ li{
     z-index: 99;
     position: fixed;
   }
-  .one_more{
+  .toggle_div{
     height: 80vh;
     display: flex;
     justify-content: center;
