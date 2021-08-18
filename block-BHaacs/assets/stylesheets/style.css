@@ -1,0 +1,569 @@
+
+CSS reset
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+margin:0;
+padding:0;
+}
+html,body {
+margin:0;
+padding:0;
+}
+html{
+  font-size: 16px;
+}
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+fieldset,img { 
+  border:0;
+}
+input{
+border:1px solid #b0b0b0;
+padding:3px 5px 4px;
+color:#979797;
+width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+font-style:normal;
+font-weight:normal;
+}
+ol,ul {
+  list-style:none;
+}
+caption,th {
+  text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+font-size:100%;
+font-weight:normal;
+}
+q:before,q:after {
+  content:'';
+}
+abbr,acronym { border:0;
+}
+ 
+
+/* css custom styles */
+#toggle{
+  display: none;
+}
+*,
+::before,
+::after{
+box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 4rem;
+}
+
+/* general class */
+
+:root{
+  --primary: rgb(89,191,194);
+  --secondary: rgb(232,246,246);
+  --tirtiary: rgb(75, 90, 121);
+  --tetra: rgb(39,62,125);
+}
+
+
+.container{
+  max-width: 1320px;
+  width: 90%;
+  margin: 0 auto;
+}
+.flex{
+  display: flex;
+}
+
+.space-bw{
+  justify-content: space-between;
+}
+
+.flex-45{
+  flex: 0 1 45%;
+}
+.flex-30{
+  flex: 0 1 30%;
+}
+.flex-20{
+  flex: 0 1 20%;
+}
+.center{
+  text-align: center;
+}
+/* header */
+
+header{
+  background: var(--primary);
+  padding: 1rem;
+  position: relative;
+  
+}
+.bars{
+  display: none;
+}
+a{
+  text-decoration: none;
+}
+
+.list-item a{
+  padding-left: 1rem;
+}
+
+.brand a, .list-item a{
+  color: var(--secondary);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* main  */
+
+/* section first */
+
+.bckg{
+  width: 100%;
+  height: 80vh;
+  background-color: var(--primary);
+}
+h1{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--secondary);
+  width: 50%;
+  margin: 0 auto;
+  padding: 3rem 0rem 1.5rem 0rem;
+  /* border: 1px solid grey; */
+}
+.btn{
+  display: block;
+  width: 15%;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--secondary);
+  color: var(--tetra);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  z-index: 99;
+}
+
+/* hero section */
+
+.hero{
+ position: absolute;
+ /* left: 20%; */
+ right: 0%;
+ top: 37%;
+ bottom: 0;
+ padding-bottom: 4rem;
+}
+.hero img{
+  width: 70%;
+  
+  border-radius: 0.75rem;
+  
+}
+
+/* second section */
+
+.file{
+  margin-top: 14rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.file a{
+  display: block;
+  font-size: 1.5rem;
+  align-items: center;
+  color: rgb(143,156,186);
+  font-weight: 700;
+}
+.file img{
+   vertical-align: middle;
+   margin-right: 0.5rem;
+}
+
+.seprate hr{
+  margin: 4rem 0rem;
+}
+
+/* graph section */
+
+.learning h2{
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--tetra);
+}
+.learning p{
+  margin: 1rem 0rem;
+  color: rgb(109,129,174);
+  font-weight: 700;
+}
+
+.graph-img img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.learning a{
+  display: block;
+  background: var(--primary);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.75rem;
+  margin-top: 2rem;
+  width: 35%;
+  text-align: center;
+}
+
+
+.shape{
+clip-path: polygon(91% 0, 100% 50%, 92% 100%, 0% 100%, 7% 53%, 0 0);
+}
+
+/* score section */
+
+.score{
+  text-align: center;
+  margin:4rem 0rem 2rem 0rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--tetra);
+}
+
+table{
+  border: 1px solid grey;
+  border-spacing: 20px;
+  text-align: left;
+  margin: auto;
+  width: 100%;
+}
+th{
+  /* border: 1px solid grey; */
+  padding: 0.75rem;
+}
+td{
+  border: 1px solid grey;
+  padding: 0.75rem;
+} 
+thead{
+  background: rgb(61,158,161);
+  color: white;
+  font-size: 1.25rem;
+}
+
+tr:nth-child(even){
+  background: rgb(213,229,229);
+}
+
+/* join us */
+
+.m-top{
+  margin: 7rem 0rem 3rem 0rem;
+}
+
+.join h2{
+  font-size: 2rem;
+  width: 35%;
+  margin: auto;
+  color: var(--tetra);
+  font-weight: 700;
+}
+
+.btn-m-y{
+  margin: 2rem 0rem 4rem 0rem;
+  justify-content: center;
+  font-weight: 700;
+  align-items: center;
+}
+
+.circular-btn{
+  width: 5%;
+  height: 30px;
+  background: rgb(187,236,236);
+  border-radius: 25px;
+  margin: 0rem 0.75rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+.circular-btn span{
+  font-size: 0.5rem;
+  font-weight: 700;
+  background: var(--primary);
+  padding: 0.2rem 0.4rem;
+  border-radius: 50%;
+  color: white;
+  margin-right: 0.25rem;
+} 
+
+/* prices */
+
+.basic{
+  box-shadow: 0px 4px 8px 4px rgba(163, 184, 183, 0.4);
+  padding: 2rem;
+  border-radius: 0.7rem;
+  margin: 0 auto;
+}
+.basic h3{
+ color: var(--tetra);
+ font-size: 2rem;
+ text-align: center;
+ font-weight: 700;
+}
+.p-main{
+  color: rgb(132,149,187);
+  font-size: 1.1rem;
+  text-align: center;
+}
+.price{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+.check{
+  color: rgb(101,113,147);
+  font-weight: 500;
+}
+.cross{
+  color: rgb(141,157,192);
+}
+.basic p{
+  margin: 1rem 0rem;
+}
+
+.start-btn{
+  display: block;
+  text-align: center;
+  border: 1px solid navy;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.start-btn2{
+  background: var(--primary);
+  color: white;
+  border: none;
+} 
+
+.price::before{
+  content: "$" ;
+  font-size: 1.25rem;
+  margin-right: 0.25rem;
+}
+.price::after{
+  content: "/Month";
+  font-size: 1.25rem;
+  margin-left: 0.25rem;
+}
+
+/* free trial */
+
+.free{
+ 
+  background: var(--primary);
+  padding: 5rem;
+  border-radius: 2rem;
+  margin: 10rem auto;
+   /* margin: 10rem 0rem; */
+}
+.free-trial{
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.start-btn3{
+  background: white;
+  color: var(--tetra);
+  border: none;
+  width: 20%;
+  margin: 0 auto;
+} 
+
+/* footer */
+li{
+  list-style: none;
+}
+
+.footer-h{
+  font-size: 1.5rem;
+  color: var(--tetra);
+  font-weight: 700;
+}
+
+.feature{
+  color: var(--tetra);
+  font-weight: 700;
+}
+
+.footer-li li, .footer-p, .footer-span{
+  color: var(--tetra);
+  margin: 1rem 0rem;
+}
+
+.fab{
+  background: var(--primary);
+  color: white;
+  padding: 0.25rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+/* responsive below 768px */
+
+@media screen and (max-width:768px) {
+ 
+  html{
+    font-size: 14px;
+  }
+  .nav-bar{
+    display: none;
+  }
+  #toggle:checked ~ .nav-bar{
+    display: inline-block;
+  }
+  .bars{
+    font-size: 1.25rem;
+    color: white;
+    position: fixed;
+    right: 2rem;
+    top: 1rem;
+    z-index: 99;
+    display: inline-block;
+  }
+  .nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(67, 99, 109, 0.6);
+    padding-top: 2rem;
+    z-index: 9;
+  }
+  .brand{
+    z-index: 99;
+    position: fixed;
+  }
+  .one_more{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list-item li{
+    margin-top: 2rem;
+    position: relative;
+  }
+  .list-item li a{
+    font-size: 2rem;
+  }
+  .bckg{
+    width: 100%;
+    height: 70vh;
+  }
+  h1{
+    width: 70%;
+  }
+  .btn{
+    width: 20%;
+  }
+  .hero{
+    width: 100%;
+  }
+  .hero img{
+    width: 100%;
+  }
+
+  /* Complete Hero section */
+
+  /* file section */
+  .file{
+    width: 100%;
+  }
+  .flex_wrap{
+    flex-wrap: wrap;
+  }
+  .file-50{
+    flex: 0 1 40%;
+  }
+  .each_center{
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .column{
+    flex-direction: column;
+  }
+  .flex-45{
+    flex: 0 1 100%;
+    margin-top: 2rem;
+  }
+
+  .flex-30{
+    flex: 0 1 100%;
+    margin-top: 2rem;
+  }
+
+  .flex-20{
+    margin-top: 2rem;
+  }
+  .circular-btn{
+    width: 4.5rem;
+  }
+  .circular-btn span{
+    padding: 0.75rem;
+  }
+  .btn-m-y{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width : 435px) {
+  html{
+    font-size: 12px;
+  }
+  h1{
+    font-size: 1.8rem;
+  }
+  .btn{
+    width: 35%;
+  }
+  .bckg{
+    height: 55vh;
+  }
+  .join h2{
+    font-size: 1.2rem;
+  }
+  .circular-btn{
+    width: 4.5rem;
+  }
+  .circular-btn span{
+    padding: 0.75rem;
+  }
+  .btn-m-y{
+    font-size: 1.5rem;
+  }
+  .start-btn3{
+    width: 45%;
+  }
+}
+
+
+
